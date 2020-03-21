@@ -12,6 +12,10 @@ namespace BlazorApp.Models
 		public AplicationDbContext(DbContextOptions options) : base(options)
 		{
 		}
+		public AplicationDbContext()
+		{
+
+		}
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 			modelBuilder.ApplyConfiguration(new ProductConfiguration());
